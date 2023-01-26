@@ -1,0 +1,9 @@
+<launch>
+    <arg name="goals" default="sim_goals" />
+    <!-- Create Goal Publisher -->
+    <node name="goal_publisher" pkg="waypoint_navigation" type="goal_publisher" output="screen" required="true">
+    
+        <rosparam file="$(find waypoint_navigation)/params/$(arg goals).yaml" command="load"/>
+    </node>
+
+</launch>

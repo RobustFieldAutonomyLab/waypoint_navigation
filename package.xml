@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<package>
+  <name>waypoint_navigation</name>
+  <version>0.0.1</version>
+  <description>The waypoint navigation package</description>
+
+  <!-- One maintainer tag required, multiple allowed, one person per tag --> 
+  <!-- Example:  -->
+  <!-- <maintainer email="jane.doe@example.com">Jane Doe</maintainer> -->
+  <maintainer email="epearson@stevens.edu">Erik</maintainer>
+
+  <!-- One license tag required, multiple allowed, one license per tag -->
+  <!-- Commonly used license strings: -->
+  <!--   BSD, MIT, Boost Software License, GPLv2, GPLv3, LGPLv2.1, LGPLv3 -->
+  <license>MIT</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <build_depend>roscpp</build_depend>
+  <run_depend>roscpp</run_depend>
+
+  <build_depend>rospy</build_depend>
+  <run_depend>rospy</run_depend>
+
+  <build_depend>ros_bridge</build_depend>
+  <run_depend>ros_bridge</run_depend>
+  
+  <build_depend>tf</build_depend>
+  <run_depend>tf</run_depend>
+  
+  <run_depend>gazebo_ros</run_depend>
+
+  <!-- Author tags are optional, mutiple are allowed, one per tag -->
+  <!-- Authors do not have to be maintianers, but could be -->
+  <!-- Example: -->
+  <!-- <author email="jane.doe@example.com">Jane Doe</author> -->
+  <author email="epearson@stevens.edu">Erik</author>
+
+  <!-- The export tag contains other, unspecified, tags -->
+  <export>
+    <gazebo_ros gazebo_model_path="${prefix}/"/>
+  </export>
+</package>
