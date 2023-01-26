@@ -29,13 +29,16 @@ We also recommend installing [hdl_graph_slam](https://github.com/koide3/hdl_grap
 
 ## Usage
 
-You can launch the program in simulation with: `roslaunch waypoint_navigation waypoint_navigation_simulation.launch`. 
+You can launch the program in simulation with: 
+```bash
+roslaunch waypoint_navigation waypoint_navigation_simulation.launch
+```
 
-Goal positions are in the params sub folder in the format \[pose x, pose y, orientation z, orientation w\]
+Goal positions are in the params sub folder in the format `[pose x, pose y, orientation z, orientation w, pose x2, pose y2, orientation z2, orientation w2]`
 
 For use on a robot, we recommend using `waypoint_navigation.launch`, which uses `icp_node.launch` for localization parameters and `goals.yaml` for waypoint positions.
 
-The `pcd_filepath` parameter in the [icp_node.launch](https://github.com/RobustFieldAutonomyLab/waypoint_navigation/launch/icp_node.launch) file should point to the location where you stored your refrence map (pointcloud) in the `.pcd` format.
+The `pcd_filepath` parameter in the [icp_node.launch](https://github.com/RobustFieldAutonomyLab/waypoint_navigation/blob/main/launch/icp_node.launch) file should point to the location where you stored your refrence map (pointcloud) in the `.pcd` format.
 
 ## Configuration
 
